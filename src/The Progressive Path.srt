@@ -1,0 +1,2619 @@
+1
+00:00:21,533 --> 00:00:22,500
+大家好
+so hi everyone
+
+2
+00:00:22,900 --> 00:00:26,533
+很高兴回到这里，并能看到你们这么多人
+I'm so great to be back here and see so many of you
+
+3
+00:00:26,966 --> 00:00:30,966
+是的，我想这次紧张感一直没有消失，所以我还是
+and yeah I think this never get off so I'm still
+
+4
+00:00:31,300 --> 00:00:34,600
+很紧张，希望你们不要介意
+very nervous so hope you don't mind so
+
+5
+00:00:36,300 --> 00:00:39,000
+是的，我希望你们喜欢这次会议
+yeah and I hope you enjoyed the conference so far
+
+6
+00:00:39,000 --> 00:00:40,200
+像我一样
+as much as I do
+
+7
+00:00:40,533 --> 00:00:43,900
+我们已经听了很多从技术视角
+so we had a lot of great talks and discussions from
+
+8
+00:00:43,900 --> 00:00:45,200
+进行的精彩的演讲和讨论
+technical perspective
+
+9
+00:00:45,266 --> 00:00:46,966
+今天我想
+and today I'd like to
+
+10
+00:00:47,333 --> 00:00:49,700
+做一个相对非技术性的演讲
+give a relative non technical talk
+
+11
+00:00:49,866 --> 00:00:50,866
+希望它能
+and hope it can
+
+12
+00:00:50,866 --> 00:00:53,133
+给你们带来一些思考和启发
+bring you some thoughts and inspiration
+
+13
+00:00:55,566 --> 00:00:58,766
+首先让我介绍一下自己，我叫Anthony Fu
+so first let me introduce myself my name is Anthony Fu
+
+14
+00:00:59,133 --> 00:01:00,166
+嗨
+and hi
+
+15
+00:01:00,966 --> 00:01:03,333
+我女朋友安妮斯为我画了这个可爱的头像
+my girlfriend Ennes draw me this cute avatar
+
+16
+00:01:03,333 --> 00:01:05,666
+还有我们稍后会看到的一些卡通画
+and also the electrician we're going to see later
+
+17
+00:01:05,800 --> 00:01:07,066
+所以谢谢她
+so thanks to her
+
+18
+00:01:07,866 --> 00:01:10,100
+是的，我叫 Anthony Fu
+and yeah so my name is Anthony Fu
+
+19
+00:01:10,100 --> 00:01:12,666
+我是 Nuxt、Vue 和 Vite的核心团队成员
+and I'm the core team member of Nuxt
+
+20
+00:01:12,733 --> 00:01:16,100
+我也是 VueUse、Slidev
+View and Vite I'm also the creator of VueUse, Slidev
+
+21
+00:01:16,300 --> 00:01:19,000
+Vitest、Unocss 等一些
+Vitest, UnoCss and a few
+
+22
+00:01:19,933 --> 00:01:21,466
+其他的开源项目的创建者
+other open source projects
+
+23
+00:01:21,766 --> 00:01:25,033
+目前我在 Nuxt Lab 的框架团队工作
+so I'm currently working at Nuxt Lab on the framework team
+
+24
+00:01:25,466 --> 00:01:29,500
+你可以在我的网站上 antfu.me 找到我
+so you can find me on my website antfu.me and
+
+25
+00:01:30,266 --> 00:01:33,066
+这里有所有你需要的链接
+this should has all the links you need
+
+26
+00:01:34,066 --> 00:01:38,166
+我非常感谢我能有这个机会
+so um I really appreciate the chance I got to
+
+27
+00:01:38,200 --> 00:01:41,100
+让我能够全职从事开源工作
+allows me to work in open source full time
+
+28
+00:01:41,466 --> 00:01:44,000
+我想对所有给予我支持和机会的人说声谢谢
+and I would like to say thank you for everyone
+
+29
+00:01:44,066 --> 00:01:45,000
+谢谢你们
+that's giving
+
+30
+00:01:45,266 --> 00:01:46,366
+给了我支持和机会
+giving me the support
+
+31
+00:01:46,366 --> 00:01:48,733
+让我能够实现这一切
+and opportunity that make this possible to me
+
+32
+00:01:49,366 --> 00:01:52,066
+一直以来，我的梦想就是从事开源工作
+so it'll always be my dream to work in open source
+
+33
+00:01:52,066 --> 00:01:53,100
+并创造一些东西
+and build things
+
+34
+00:01:53,100 --> 00:01:53,966
+可以帮助
+that can help
+
+35
+00:01:54,066 --> 00:01:55,300
+世界各地的人们
+the people around the world
+
+36
+00:01:55,600 --> 00:01:57,533
+就像参加这样的精彩活动
+like attending awesome events like this
+
+37
+00:01:57,533 --> 00:02:00,133
+并在社区中遇到许多优秀的人一样
+and meeting so many great people in the community
+
+38
+00:02:00,866 --> 00:02:02,600
+我相信很多像我一样的人
+so I believe many of you like me
+
+39
+00:02:02,600 --> 00:02:04,566
+都对从事开源感兴趣
+are interested in doing open source
+
+40
+00:02:04,866 --> 00:02:07,100
+所以今天我想在这里分享一些
+so today here I'd like to share
+
+41
+00:02:07,266 --> 00:02:09,800
+我的想法和经验
+some of my thoughts and the experience I got
+
+42
+00:02:10,300 --> 00:02:11,966
+希望能给你们一些
+and hopefully can provide you some
+
+43
+00:02:12,200 --> 00:02:14,600
+关于你们自己开源之路的启发
+inspirations on your own open source journey
+
+44
+00:02:15,866 --> 00:02:18,533
+开源是一个很大的话题
+so open source is a quite big topic
+
+45
+00:02:18,533 --> 00:02:20,766
+我不可能在一个演讲中涵盖所有内容
+and I cannot really cover everything in one talk 
+
+46
+00:02:21,033 --> 00:02:23,833
+所以我会尝试把它分解开
+so I'm trying to break it down
+
+47
+00:02:23,900 --> 00:02:27,666
+并在每次演讲中讨论不同方面
+and talk about different aspects of open source in each talk
+
+48
+00:02:27,900 --> 00:02:29,266
+并把它做成一个系列
+and make them a series
+
+49
+00:02:29,533 --> 00:02:31,566
+今天讲的是第二部分
+so today is going to be the part 2
+
+50
+00:02:32,500 --> 00:02:33,700
+渐进之路
+the progressive path
+
+51
+00:02:35,133 --> 00:02:37,200
+之前的演讲是集合论
+the previous episode is about The Set Theory
+
+52
+00:02:37,566 --> 00:02:39,566
+我在几个会议上已经讲过
+where I already given a few conferences
+
+53
+00:02:39,566 --> 00:02:41,766
+而且那个主题与今天的主题独立
+and the topic was independent from today's
+
+54
+00:02:41,766 --> 00:02:44,000
+所以如果你错过了也不要担心
+so don't worry if you have missed it
+
+55
+00:02:44,266 --> 00:02:45,700
+如果你感兴趣的话
+and in case you are interested
+
+56
+00:02:45,800 --> 00:02:50,000
+你可以在我的网站antfu.me上找到录音
+you can find the recordings on my website antfu.me afterwrad
+
+57
+00:02:50,966 --> 00:02:54,366
+首先，在我们深入今天的主题之前
+so first before we dive into today's topic
+
+58
+00:02:54,800 --> 00:02:56,700
+让我们讨论一下
+let's discuss a bit
+
+59
+00:02:56,700 --> 00:02:58,866
+我们对开源的期望是什么
+about what we are expecting from open source
+
+60
+00:03:00,300 --> 00:03:02,400
+我们知道大多数我们使用的开源项目
+we know that most of the open source
+
+61
+00:03:02,700 --> 00:03:05,600
+都是实际日常用的工具
+projects that we use daily are actual tools
+
+62
+00:03:05,866 --> 00:03:08,333
+你是否曾经考虑过这样一个问题
+and have you ever thought about the question that
+
+63
+00:03:08,500 --> 00:03:09,600
+什么定义了工具
+what defines a tool
+
+64
+00:03:10,800 --> 00:03:13,700
+这个定义应该非常简单
+the definition should be pretty straightforward and
+
+65
+00:03:14,533 --> 00:03:16,500
+也许你已经有了答案
+maybe you already have the answer in your mind
+
+66
+00:03:17,000 --> 00:03:18,666
+在我看来
+and in my interpretation
+
+67
+00:03:19,066 --> 00:03:22,433
+工具应该帮助你更快更轻松地完成任务
+a tool should help you to get things done faster and easier
+
+68
+00:03:23,100 --> 00:03:24,200
+至少是它的功能之一
+at least one of them
+
+69
+00:03:25,600 --> 00:03:27,533
+我想没有人愿意使用一个让事情变得
+I guess no one wants to use a tool that makes things
+
+70
+00:03:27,533 --> 00:03:29,500
+更慢或更复杂的工具，对吧
+slower or more complicated right
+
+71
+00:03:31,300 --> 00:03:34,533
+所以假设我们想要建立一个新的开源项目
+so assume we want to build a new open source project
+
+72
+00:03:34,700 --> 00:03:35,966
+一个供人们使用的工具
+a tool for people to use
+
+73
+00:03:36,333 --> 00:03:39,533
+你会考虑什么来判断你要构建的工具
+and what would you consider to justify if a tool you
+
+74
+00:03:39,733 --> 00:03:42,466
+是否是一个好工具
+are going to build is a good one or not
+
+75
+00:03:44,100 --> 00:03:45,766
+我的答案是否定的
+well my answer is no
+
+76
+00:03:46,100 --> 00:03:47,200
+你无法真正确定
+you cannot really tell
+
+77
+00:03:47,366 --> 00:03:49,700
+除非经过社区的验证
+without being verified by the community
+
+78
+00:03:49,933 --> 00:03:52,700
+因为有太多的因素可以影响
+because there are so many factors that can affect
+
+79
+00:03:53,733 --> 00:03:55,900
+一个开源项目是否成功
+if an open source project will work out or not
+
+80
+00:03:56,700 --> 00:03:59,566
+但是我也想强调，在这个语境中
+but also I want to emphasize that in these contexts
+
+81
+00:03:59,566 --> 00:04:01,200
+“好”是一个相对的词
+and good is a relative term
+
+82
+00:04:01,200 --> 00:04:03,000
+取决于你的期望
+that depends on your expectation
+
+83
+00:04:03,500 --> 00:04:06,100
+建立一个解决你自己问题的工具是完全ok的
+it's totally okay to build a tool that solves your own problem
+
+84
+00:04:06,200 --> 00:04:07,333
+然后就此结束
+and call it a day
+
+85
+00:04:07,600 --> 00:04:09,800
+它是一个很好的工具，因为它对你有效
+it's a great tool that works for you anyway
+
+86
+00:04:10,333 --> 00:04:10,933
+实际上
+and actually
+
+87
+00:04:10,933 --> 00:04:13,766
+我有很多这样的工具，我对它们很满意
+I have plenty of such tools and I'm happy about that
+
+88
+00:04:14,200 --> 00:04:16,133
+即使没有其他人使用它们
+even though no one else is going to use them
+
+89
+00:04:16,333 --> 00:04:18,566
+但它们让我在一天结束时完成了工作
+but they got me job done at the end of day right
+
+90
+00:04:19,200 --> 00:04:21,000
+所以让我们重新审视我们的目标
+so let's revise our goal
+
+91
+00:04:21,333 --> 00:04:24,300
+假设我们想要建立一个工具，可以
+let's say we want to build a tool that can
+
+92
+00:04:24,666 --> 00:04:28,266
+不仅对我们自己有用，还能对更多人有帮助
+be beneficial not only ourselves but also more people
+
+93
+00:04:28,600 --> 00:04:31,266
+并且社区也可以帮助我们改进
+and probably the community could also help us back
+
+94
+00:04:31,266 --> 00:04:33,333
+使工具能够帮助到更多的人
+and make the tools better for everyone
+
+95
+00:04:34,100 --> 00:04:36,100
+所以问题变成了我们如何
+so the question becomes how
+
+96
+00:04:36,200 --> 00:04:36,933
+可以制作一个
+could we make a
+
+97
+00:04:36,933 --> 00:04:39,333
+通用且有用的工具供人们使用
+general and useful tool for people to use
+
+98
+00:04:40,600 --> 00:04:42,766
+我会说每个决定都伴随着权衡
+well I'd say that every decision comes
+
+99
+00:04:43,200 --> 00:04:48,000
+当用户考虑是否要使用工具时
+with a tradeoff and when users consider if they want to use a tool
+
+100
+00:04:48,500 --> 00:04:52,366
+他们会证明你可以从中获得的成本和收益是合理的
+they would justify the cost and benefit you could get from it so
+
+101
+00:04:53,200 --> 00:04:56,333
+这里有个天平
+here we have a balance and we're going to
+
+102
+00:04:56,966 --> 00:04:58,666
+如果我要放两个最重要的
+if I'm going to put two most
+
+103
+00:04:58,766 --> 00:05:00,600
+到天平上
+important factor on the balance
+
+104
+00:05:00,766 --> 00:05:04,833
+那我会选择学习和使用工具成本
+and I'd pick the cause of learning and using the tool
+
+105
+00:05:05,100 --> 00:05:07,333
+对比我实际不用工具做事情的成本
+vs the cause of doing something oneself
+
+106
+00:05:08,100 --> 00:05:09,366
+所以为了让
+so in order to make
+
+107
+00:05:10,533 --> 00:05:12,533
+用户愿意使用我们的工具
+users willing to use our tool
+
+108
+00:05:12,666 --> 00:05:13,400
+我会说
+I'd say that
+
+109
+00:05:13,400 --> 00:05:15,566
+学习成本应该远低于
+the cost of learning should be much less than
+
+110
+00:05:15,566 --> 00:05:16,700
+实际操作的成本
+the cost of doing
+
+111
+00:05:17,066 --> 00:05:19,800
+这一直是我的小公式
+and this has been my little
+
+112
+00:05:20,133 --> 00:05:23,900
+用来预评估我的想法
+go to formula to pre evaluate the idea I have
+
+113
+00:05:24,533 --> 00:05:26,700
+是否值得去做
+if the idea is worthwhile or not
+
+114
+00:05:27,300 --> 00:05:28,366
+例如
+so for example
+
+115
+00:05:28,866 --> 00:05:30,266
+假设我想
+let's say if I want to
+
+116
+00:05:30,866 --> 00:05:32,766
+求10个数字的和
+get a summary of 10 numbers
+
+117
+00:05:33,066 --> 00:05:33,866
+你会寻找
+would you look
+
+118
+00:05:34,366 --> 00:05:35,666
+一个库来完成这件事吗
+for a library to do that
+
+119
+00:05:35,933 --> 00:05:36,866
+可能不会
+and probably no
+
+120
+00:05:36,933 --> 00:05:38,766
+因为我们可以用一个简单的循环
+because we can do it with a single loop
+
+121
+00:05:38,766 --> 00:05:40,166
+两行代码来完成
+of two lines of code
+
+122
+00:05:40,500 --> 00:05:42,000
+我们自己做的成本
+and the cost of doing ourselves
+
+123
+00:05:42,166 --> 00:05:44,333
+太低了，我们根本不会考虑
+is too low that we don't even consider
+
+124
+00:05:44,333 --> 00:05:46,966
+去寻找或使用工具
+to searching or getting a tool
+
+125
+00:05:48,566 --> 00:05:51,566
+如果我们要做一些微积分
+but if we are going to do some calculus
+
+126
+00:05:51,666 --> 00:05:53,766
+我肯定会找一个库
+and I'm certainly going to find a library
+
+127
+00:05:54,166 --> 00:05:56,100
+来替我完成，因为我基本上忘记了
+to do it for me because I basically forgot
+
+128
+00:05:56,100 --> 00:05:58,300
+所有我在大学学到的东西
+everything I got in my college
+
+129
+00:05:59,766 --> 00:06:01,733
+然而另一方面
+so however on the other hand
+
+130
+00:06:02,366 --> 00:06:05,533
+如果我们选择的库需要我们理解比如说
+if the library we pick requires us to understand like
+
+131
+00:06:05,733 --> 00:06:09,000
+100种不同的配置
+100 different configurations before
+
+132
+00:06:09,400 --> 00:06:10,733
+我们才能使用它
+we are able to use it
+
+133
+00:06:11,400 --> 00:06:13,500
+我们可能不会使用它
+we probably not going to
+
+134
+00:06:13,500 --> 00:06:16,100
+而是会寻找另一个可能更容易的库
+use it and find another library that might be easier
+
+135
+00:06:17,133 --> 00:06:18,200
+因此我们知道
+thus we know that
+
+136
+00:06:18,500 --> 00:06:19,400
+在制作工具时
+when making tools
+
+137
+00:06:19,400 --> 00:06:20,266
+我们必须考虑
+we have to think
+
+138
+00:06:20,266 --> 00:06:22,766
+这些情况，并找到一个好的平衡点
+about those cases and find a good balance
+
+139
+00:06:23,333 --> 00:06:25,000
+使这个工具值得使用
+to make the tool worthwhile
+
+140
+00:06:26,400 --> 00:06:28,100
+因此我们知道我们应该
+so here we know that we should
+
+141
+00:06:28,100 --> 00:06:30,600
+尽可能降低使用这个工具的成本
+probably reduce the cost of using the tool
+
+142
+00:06:31,000 --> 00:06:32,900
+以便让人们更容易上手
+to make it easier for people to pick up
+
+143
+00:06:33,366 --> 00:06:34,733
+所以在我看来
+so from my point of view
+
+144
+00:06:35,300 --> 00:06:39,666
+工具的成本由以下因素组成
+the cost of the tool is composed by the following factors
+
+145
+00:06:40,966 --> 00:06:43,166
+第一个是发现的成本
+the first one is the cost of discovering
+
+146
+00:06:43,566 --> 00:06:45,766
+这是关于人们通常
+uh it's about how commonly people need
+
+147
+00:06:45,766 --> 00:06:47,466
+需要意识到他们需要一个工具
+to realize they need a tool
+
+148
+00:06:47,566 --> 00:06:48,733
+在特定场景下
+for certain text
+
+149
+00:06:48,933 --> 00:06:51,966
+这意味着工具应该创建时就被定义清楚
+and it means that the tool should also be well defined
+
+150
+00:06:52,100 --> 00:06:59,333
+能用一两句话就能描述清楚，工具的具体用途
+and so that people can easily get what a tool is for with one or two sentence in the description
+
+151
+00:06:59,566 --> 00:07:01,166
+然后就是学习成本
+then we have the cost of learning
+
+152
+00:07:01,500 --> 00:07:04,500
+这是我认为特别重要的一点
+ah this is a particularly important one in my opinion
+
+153
+00:07:04,500 --> 00:07:10,100
+这是关于人们多容易理解并开始使用这个工具
+is that ah is how easy for people to understand and to get start with a tool
+
+154
+00:07:10,733 --> 00:07:12,733
+作为一个工具应该是
+as a tool is supposed to be
+
+155
+00:07:12,866 --> 00:07:15,800
+使实际工作更容易
+to be used to make the actual work easier
+
+156
+00:07:15,933 --> 00:07:23,800
+我们也不希望用户在使用之前花过多的时间去学习。
+we certainly don't want the user to struggle on learning for a long time before they can actually get benefit from using the tool
+
+157
+00:07:24,733 --> 00:07:26,166
+然后是代价
+and then we have the price
+
+158
+00:07:26,300 --> 00:07:28,500
+工具本身的成本
+the cost of the tool itself
+
+159
+00:07:28,900 --> 00:07:30,200
+我们很幸运在开源项目中
+and we're lucky that in open source 
+
+160
+00:07:30,200 --> 00:07:32,900
+大多数工具都是免费使用的
+the majority of the tools are free to use
+
+161
+00:07:33,400 --> 00:07:37,233
+感谢每一个在幕后的维护者和贡献者
+so thanks to every maintainers and contributors behind the scene and 
+
+162
+00:07:37,233 --> 00:07:41,133
+创造了如此多的优秀工具供大家使用
+make so much awesome tools that for everyone to use
+
+163
+00:07:41,300 --> 00:07:43,700
+但是当然，另一方面
+but of course like on the other hand
+
+164
+00:07:43,733 --> 00:07:46,733
+如果工具不是免费的
+if the tool is not free this definitely go into 
+
+165
+00:07:47,000 --> 00:07:50,066
+这肯定会成为用户选择工具时考虑的一个因素
+one of the factors that user would consider on choosing
+
+166
+00:07:51,400 --> 00:07:55,966
+最后一个是采用的成本
+and then the last one is the cost of adoption
+
+167
+00:07:56,700 --> 00:08:00,733
+比如如何将一个工具集成或安装到项目中
+like how to integrate or how to install one tool into one project
+
+168
+00:08:00,900 --> 00:08:04,933
+以及工具对未来需求的扩展性
+and how extendable the tool is for potential future needs 
+
+169
+00:08:04,933 --> 00:08:07,400
+以及迁移的成本是多少等等
+and how much migration would cost stc
+
+170
+00:08:07,400 --> 00:08:09,200
+所有这些因素实际上是由于
+so all those factors
+
+171
+00:08:09,200 --> 00:08:13,066
+使用外部工具而引入的
+are actually introduced because the use of an external tool
+
+172
+00:08:13,766 --> 00:08:14,666
+最后
+um in the end
+
+173
+00:08:14,666 --> 00:08:18,933
+我们希望工具的成本能被它提供的好处所抵消
+we want the cost of the tool being paid off by the benefit it provides
+
+174
+00:08:19,366 --> 00:08:22,466
+因此我们知道事物存在复杂性
+so we know that's the complexity of things
+
+175
+00:08:22,733 --> 00:08:25,200
+可能会从一个地方转移到另一个地方
+might transfer from one place to the other
+
+176
+00:08:26,133 --> 00:08:28,100
+但不会神奇地消失
+but not going to magically disappear
+
+177
+00:08:28,466 --> 00:08:31,466
+所以如果我们要解决一个复杂的问题
+so if we are going to solve a complex problem
+
+178
+00:08:31,666 --> 00:08:35,200
+也很难避免工具变得复杂
+it's really kind of hard to prevent a tool from getting complex too
+
+179
+00:08:35,766 --> 00:08:36,966
+所以对于此
+so for that
+
+180
+00:08:37,333 --> 00:08:40,466
+我从流行的开源项目中学到的是
+what I learned from the popular open source projects
+
+181
+00:08:40,666 --> 00:08:43,500
+有一种叫做渐进式的东西
+out there is something called progressive
+
+182
+00:08:44,800 --> 00:08:48,166
+因此在这个长篇介绍之后，我们终于回到我们的
+so after this long intro we finally get back to our
+
+183
+00:08:48,166 --> 00:08:50,666
+今天的话题，什么是渐进式
+topic today, what is progressive
+
+184
+00:08:51,766 --> 00:08:55,200
+我认为渐进式本身是相当于自我扩展
+I think progressive itself is pretty self-expanding
+
+185
+00:08:56,500 --> 00:09:01,466
+这里我们用插图来举个例子
+here let's take a quick example with illustrations
+
+186
+00:09:01,800 --> 00:09:04,366
+所以，这是我
+so yeah, this is me
+
+187
+00:09:04,700 --> 00:09:07,166
+我试图从一楼
+and I'm trying to get from the first floor
+
+188
+00:09:07,166 --> 00:09:07,966
+到二楼
+to the second floor
+
+189
+00:09:09,166 --> 00:09:11,766
+但不幸的是，我撞到了墙
+but unfortunately I hit a wall
+
+190
+00:09:12,300 --> 00:09:15,000
+唯一的办法就是跳过这堵墙
+the only way to get there is to jump through the wall
+
+191
+00:09:15,000 --> 00:09:16,933
+但我不是一个很有运动细胞的人
+but I'm not a very sports person
+
+192
+00:09:16,966 --> 00:09:18,733
+所以我跳不过去
+so I'm not able to jump that high
+
+193
+00:09:19,800 --> 00:09:22,666
+可能我会放弃然后掉头走回去
+in that case, I might give up and turn back
+
+194
+00:09:23,566 --> 00:09:24,766
+这很遗憾，因为
+this is a shame because
+
+195
+00:09:24,766 --> 00:09:28,000
+我没有实现我想要的目标
+I kind of fail to accomplish what I'm aiming for
+
+196
+00:09:28,166 --> 00:09:29,700
+因为这太难了
+because this is too hard
+
+197
+00:09:30,966 --> 00:09:34,400
+但从渐进式的角度来看
+but from a progressive perspective
+
+198
+00:09:34,533 --> 00:09:36,900
+我认为这就是为什么发明了楼梯
+I think that's why stairs were invented
+
+199
+00:09:38,266 --> 00:09:44,366
+它允许我们逐步向上走，最终实现一个目标
+it allows us to take multiple small steps and go upward, and eventually achieve a goal
+
+200
+00:09:45,266 --> 00:09:47,900
+如果没有则很难实现
+that would be very hard to achieve without it
+
+201
+00:09:49,100 --> 00:09:49,800
+所以在这里
+so here
+
+202
+00:09:49,800 --> 00:09:53,300
+我对渐进的理解是楼梯
+my interpretation of progressive is that stairs
+
+203
+00:09:53,300 --> 00:09:55,466
+使事情更容易接近
+make things easier to approach
+
+204
+00:09:56,500 --> 00:09:57,333
+所以让我们来
+so let's take
+
+205
+00:09:58,166 --> 00:10:01,800
+一些实际工作中的例子，比如渐进式在日常工具中的应用
+some real work examples, like how progressive works in our daily tools
+
+206
+00:10:02,600 --> 00:10:06,933
+如果你去 Vue 的官方网站
+so if you go to Vue's official documentation
+
+207
+00:10:06,933 --> 00:10:09,000
+vuejs.org，你会看到标题
+vuejs.org, you will see the headline
+
+208
+00:10:09,000 --> 00:10:12,166
+将其描述为一个渐进式 JavaScript 框架
+describes it as a progressive JavaScript framework
+
+209
+00:10:12,466 --> 00:10:15,700
+在文档中有一个声明提到
+and inside the docs, there is a statement mentioning that
+
+210
+00:10:15,800 --> 00:10:19,333
+Vue 是一个可以随着你成长和需求而变化的框架
+Vue is a framework that can grow with you and adapt to your needs
+
+211
+00:10:20,000 --> 00:10:21,566
+我听人说过
+I have heard people say that
+
+212
+00:10:21,700 --> 00:10:26,300
+Vue 的一个主要卖点是它非常容易学习和上手
+one of the main selling points of Vue is that it is very easy to learn and get started
+
+213
+00:10:26,600 --> 00:10:28,466
+更重要的是，我看到
+and more than that, I see that
+
+214
+00:10:28,466 --> 00:10:31,000
+Vue 很棒，因为它几乎可以在任何地方使用
+Vue is awesome because it can be used basically everywhere
+
+215
+00:10:31,000 --> 00:10:33,933
+感谢它所采用的渐进式理念
+thanks to the progressive approach it takes
+
+216
+00:10:35,000 --> 00:10:37,566
+Vue 在集成方面是渐进式的
+so Vue is progressive in terms of integration
+
+217
+00:10:37,900 --> 00:10:41,000
+Vue 提供了很多中使用方式
+Vue provides multiple views and offers many ways
+
+218
+00:10:41,100 --> 00:10:43,800
+以便在不同的场景中使用
+for it to be used in different scenarios
+
+219
+00:10:43,933 --> 00:10:45,366
+比如你可以使用 Vue
+like you can use Vue in a
+
+220
+00:10:45,866 --> 00:10:47,566
+以单行 CDN 导入
+single line of CDN import
+
+221
+00:10:47,600 --> 00:10:49,766
+就可以在你的 Web应用中使用
+to enhance your web applications
+
+222
+00:10:49,866 --> 00:10:53,300
+即使是在没有任何构建工具的静态 HTML 文件中
+even in a static HTML file without any build tool
+
+223
+00:10:54,500 --> 00:10:58,266
+然后我们也可以将 Vue 组件用作 Web components
+and then we can also use Vue components as web components
+
+224
+00:10:58,266 --> 00:11:00,600
+所以它可以与其他框架共存
+so it can coexist with other frameworks
+
+225
+00:11:00,933 --> 00:11:01,500
+反之亦然
+vice versa
+
+226
+00:11:01,500 --> 00:11:04,433
+你也可以在你的 Vue 应用中导入 Web component
+you can also import web components in your Vue applications
+
+227
+00:11:04,933 --> 00:11:07,866
+当我们有了 Vue 构建工具后
+and when we have the Vue tool setup
+
+228
+00:11:09,266 --> 00:11:12,233
+我们可以使用 Vite 创建 Vue 应用
+we can build Vue applications with
+
+229
+00:11:12,333 --> 00:11:13,333
+例如
+Vite, for example
+
+230
+00:11:13,333 --> 00:11:15,666
+使用 Vue 的单文件组件
+with Vue single file components
+
+231
+00:11:16,066 --> 00:11:20,066
+将必要的上下文放在一个文件中
+and colocate necessary contexts inside a single file
+
+232
+00:11:20,333 --> 00:11:21,966
+这让我们能够轻松地构建
+this allows us to build
+
+233
+00:11:21,966 --> 00:11:24,566
+交互式的单页应用程序
+interactive single-page applications with ease
+
+234
+00:11:25,000 --> 00:11:27,800
+使用像 VitePress 这样的工具，它允许你
+and with tools like VitePress, it allows you to
+
+235
+00:11:28,066 --> 00:11:30,866
+高效地进行静态站点生成
+efficiently generate static sites
+
+236
+00:11:30,933 --> 00:11:32,733
+并且仅加载最少的 JavaScript
+that ship minimal JavaScript
+
+237
+00:11:32,733 --> 00:11:34,866
+同时保持良好的开发者体验
+while maintaining a great developer experience
+
+238
+00:11:35,700 --> 00:11:39,033
+使用像 Nuxt 这样的工具，我们可以使用 Vue 进行服务器端渲染
+and with tools like Nuxt, we could have server-side rendering with Vue
+
+239
+00:11:39,266 --> 00:11:40,966
+以最大化用户体验
+to maximize the user experience
+
+240
+00:11:41,200 --> 00:11:44,933
+和更好的 SEO 结果
+and as well as the better SEO result
+
+241
+00:11:45,533 --> 00:11:48,766
+本地也可以通过 Ionic 或
+native targeting is also possible by Ionic or
+
+242
+00:11:48,966 --> 00:11:50,100
+NativeScript 来实现
+NativeScript
+
+243
+00:11:50,100 --> 00:11:52,266
+正如 Jessica 刚才做了一个很棒的展示
+as Jessica just made an awesome showcase
+
+244
+00:11:52,566 --> 00:11:54,100
+然后我们有
+and then we have the
+
+245
+00:11:54,100 --> 00:11:57,200
+即将到来的 Vapor 模式，它允许组件
+upcoming Vapor mode, which allows components
+
+246
+00:11:57,300 --> 00:12:01,966
+选择更高性能的无虚拟 DOM 渲染引擎
+to opt in a more performant, virtual DOM-less render engine
+
+247
+00:12:02,100 --> 00:12:06,633
+以进一步优化一些场景的性能表现
+to optimize even further for performance-critical scenarios
+
+248
+00:12:07,733 --> 00:12:12,000
+因此，Vue 的方法在集成层面上是渐进式的
+so Vue's approach provides progressiveness on the level of integrations
+
+249
+00:12:12,333 --> 00:12:15,700
+这使得它能覆盖不同场景的需求
+it allows it to cover the needs for different scenarios
+
+250
+00:12:15,700 --> 00:12:18,133
+甚至与其他技术共存
+or even coexist with other technologies
+
+251
+00:12:18,900 --> 00:12:20,933
+这意味着即使你有一个大的
+this means even if you have a large
+
+252
+00:12:20,933 --> 00:12:22,800
+代码库使用了其他技术栈
+codebase with another stack
+
+253
+00:12:22,800 --> 00:12:25,866
+但是你也想开始使用 Vue
+but you also want to get started with using Vue
+
+254
+00:12:26,333 --> 00:12:28,533
+你可以先在应用程序的一部分使用 Vue
+you can adopt some part of your app using Vue first
+
+255
+00:12:28,533 --> 00:12:31,933
+然后逐步迁移每个部分
+and gradually migrate each part slowly
+
+256
+00:12:32,333 --> 00:12:33,533
+据我所知
+and as far as I know
+
+257
+00:12:33,533 --> 00:12:35,566
+比如像 WikiMedia 也
+like for example, WikiMedia also
+
+258
+00:12:35,566 --> 00:12:36,733
+选择了 Vue 作为
+picked Vue as their
+
+259
+00:12:36,866 --> 00:12:39,500
+下一代框架并开始切换
+next framework and started to enhance it with Vue
+
+260
+00:12:40,133 --> 00:12:40,933
+最后
+in the end
+
+261
+00:12:41,566 --> 00:12:43,300
+我们的目标是让我们的工具
+the goal is to make our tool
+
+262
+00:12:43,300 --> 00:12:45,166
+易于适应不同的场景
+easy to adopt for different scenarios
+
+263
+00:12:45,166 --> 00:12:46,900
+和需求，以便我们能够
+and needs so that we can
+
+264
+00:12:46,900 --> 00:12:49,133
+服务于广泛的用户
+serve a wide range of users
+
+265
+00:12:51,366 --> 00:12:53,133
+然后我们来说一下Nuxt
+and then let's talk about Nuxt
+
+266
+00:12:53,600 --> 00:12:55,933
+战术喝水
+
+267
+00:12:56,133 --> 00:12:57,600
+如果你访问 nuxt.com
+if you go to nuxt.com
+
+268
+00:12:57,700 --> 00:12:59,666
+你会看到它被称为
+you will see it's been titled as
+
+269
+00:13:00,333 --> 00:13:02,700
+直观的 Vue 框架
+the Intuitive Vue Framework
+
+270
+00:13:02,866 --> 00:13:04,733
+在文档中提到
+and in the docs, it mentions
+
+271
+00:13:04,733 --> 00:13:06,666
+Nuxt 的目标是让 Web
+Nuxt's goal is to make the web
+
+272
+00:13:06,666 --> 00:13:08,366
+直观且高性能
+intuitive and performant
+
+273
+00:13:08,366 --> 00:13:10,166
+并提供出色的开发者体验
+with a great developer experience
+
+274
+00:13:10,966 --> 00:13:13,100
+这引出了下一节内容
+and that brings us to the next section
+
+275
+00:13:14,100 --> 00:13:15,533
+渐进式引导
+progressive on onboarding
+
+276
+00:13:16,466 --> 00:13:19,500
+如果你尝试过 Nuxt 的启动模板
+if you have ever tried Nuxt's starter template
+
+277
+00:13:20,200 --> 00:13:24,133
+你会发现开始一个 Nuxt 应用程序非常容易
+you will find it's surprisingly easy to start a Nuxt app
+
+278
+00:13:24,900 --> 00:13:26,500
+你所需要做的就是
+if um all you need to do
+
+279
+00:13:26,500 --> 00:13:29,466
+将 Nuxt 安装为你的开发依赖项
+is to have Nuxt installed as your dev dependency
+
+280
+00:13:29,700 --> 00:13:31,966
+并创建一个简单的 Vue 文件组件
+and create a simple Vue file component
+
+281
+00:13:31,966 --> 00:13:33,300
+呃，作为 Vue 文件
+uh, as a Vue file
+
+282
+00:13:33,600 --> 00:13:34,500
+就是这样
+and that's it
+
+283
+00:13:34,500 --> 00:13:36,566
+这就是你开始使用 Nuxt 所需的一切
+that's all you need to get started with Nuxt
+
+284
+00:13:37,166 --> 00:13:40,366
+即使对于从未尝试过 Nuxt 或 Vue 的人来说
+even for someone who has never tried Nuxt or Vue
+
+285
+00:13:40,400 --> 00:13:43,366
+也不难看出它会渲染什么
+it's probably not hard to tell what it will render
+
+286
+00:13:43,600 --> 00:13:46,666
+或者如何修改变成你想要的样子
+or how to modify it to change the text you want
+
+287
+00:13:46,866 --> 00:13:49,933
+只要他们对 HTML 有基本的了解
+as long as they have a basic idea of what HTML is
+
+288
+00:13:50,466 --> 00:13:53,066
+所以我认为 Nuxt 的直观性在于
+so I think Nuxt's intuitiveness here
+
+289
+00:13:53,200 --> 00:13:56,633
+你可以用非常少的知识就能使用它
+means that you can get started with very minimal knowledge
+
+290
+00:13:56,900 --> 00:13:58,966
+而且它也应该相当容易
+while it should also be fairly easy
+
+291
+00:13:58,966 --> 00:14:00,933
+在需要时启用更多功能
+to enable more features as you need them
+
+292
+00:14:02,200 --> 00:14:04,666
+所以让我们谈谈 Nuxt 的另一个方面
+so let's talk about the other aspect of Nuxt
+
+293
+00:14:05,200 --> 00:14:06,500
+Nuxt擅长的部分
+what Nuxt is good at
+
+294
+00:14:06,866 --> 00:14:08,166
+渐进式特性
+progressive on features
+
+295
+00:14:08,866 --> 00:14:10,666
+我们知道 Nuxt 是
+so we know that Nuxt was
+
+296
+00:14:11,366 --> 00:14:13,100
+以最小的形式启动
+with a bare minimum status
+
+297
+00:14:13,133 --> 00:14:15,366
+但我们也知道在现实世界中
+but we also know that in a real world
+
+298
+00:14:15,633 --> 00:14:18,733
+应用程序不会看起来那么简单
+application that it won't be looked that simple
+
+299
+00:14:18,966 --> 00:14:22,200
+所以我们需要很多功能来满足各种需求
+so we need a lot of capabilities to accomplish various needs
+
+300
+00:14:22,200 --> 00:14:23,533
+同时
+and also
+
+301
+00:14:23,533 --> 00:14:26,866
+我们需要一种方法来以可管理的方式组织代码
+a way for us to organize the code in a manageable way
+
+302
+00:14:27,533 --> 00:14:30,600
+所以 Nuxt 是一个可以随着你需求增长的框架
+so Nuxt is a framework that can grow with you
+
+303
+00:14:30,800 --> 00:14:31,766
+呃，随着你的需求
+uh, with your needs
+
+304
+00:14:32,066 --> 00:14:34,366
+比如说呃，如果
+like to say um, if
+
+305
+00:14:34,966 --> 00:14:37,866
+如果你想要一些组件来分离
+if you want some components to be separate
+
+306
+00:14:38,266 --> 00:14:39,733
+并重用逻辑
+and reuse logic
+
+307
+00:14:40,266 --> 00:14:41,333
+在 Nuxt 中你可以
+in Nuxt, you can
+
+308
+00:14:41,966 --> 00:14:45,200
+你只需在compnents/ 文件夹下创建 组件文件
+you can just create the components files under the components directory
+
+309
+00:14:45,233 --> 00:14:46,466
+它们会自动
+and they will be auto
+
+310
+00:14:46,566 --> 00:14:48,533
+在你的项目中被发现
+discoverable across your project
+
+311
+00:14:48,866 --> 00:14:50,266
+然后如果我们的
+and then if our
+
+312
+00:14:50,266 --> 00:14:53,800
+应用程序需要服务多个页面和导航
+app needs the capability of serving multiple pages and navigations
+
+313
+00:14:53,833 --> 00:14:56,866
+你可以创建一个pages/文件夹
+you can create a pages directory and
+
+314
+00:14:57,533 --> 00:15:00,900
+它将为你设置 Vue 路由器
+it will set up the Vue router for you and the components
+
+315
+00:15:00,966 --> 00:15:08,100
+该目录下的组件将根据文件名自动注册到你的路由中
+under the directory will be automatically registered to your route based on their file name
+
+316
+00:15:10,266 --> 00:15:13,100
+另一个很棒的部分是，你虽然这么做了
+other great parts is that until you do this
+
+317
+00:15:13,200 --> 00:15:16,533
+但Vue 路由器和相关代码
+uh, Vue router and related code
+
+318
+00:15:16,533 --> 00:15:20,233
+并不需要写到你的应用程序中
+shipped to your production app before you actually use them
+
+319
+00:15:21,766 --> 00:15:23,866
+假设我们的应用程序现在已经准备好了
+say our app is now ready to go
+
+320
+00:15:23,866 --> 00:15:26,266
+我们想把网站部署到某个地方
+and we want to deploy the site somewhere
+
+321
+00:15:26,966 --> 00:15:29,066
+有很多部署平台可以选择
+there are quite many deploy platforms that you can choose from
+
+322
+00:15:29,066 --> 00:15:31,166
+所以通常你需要学习一些
+so usually you need to
+
+323
+00:15:31,166 --> 00:15:35,500
+比如如何在某平台上部署某框架
+learn a little bit like how to deploy X framework on the Y platform, etc.
+
+324
+00:15:36,133 --> 00:15:37,166
+但是使用 Nuxt
+but with Nuxt
+
+325
+00:15:38,300 --> 00:15:44,300
+它几乎可以不需要配置就可以启动api服务
+it just works on all major hosting services with zero configuration
+
+326
+00:15:44,500 --> 00:15:47,666
+感谢由 Nitro 提供的自动部署功能
+thanks to the automatic deploy presets powered by Nitro
+
+327
+00:15:50,000 --> 00:15:53,000
+这对于一个 Web 应用程序来说也很常见
+it's also common for a web app
+
+328
+00:15:53,000 --> 00:15:54,466
+有一些服务器逻辑
+to have some server logic
+
+329
+00:15:54,466 --> 00:15:56,200
+和 API 接口
+and API endpoints
+
+330
+00:15:56,566 --> 00:15:58,266
+在 Nuxt 中你可以简单地创建一个
+in Nuxt, you can simply create a
+
+331
+00:15:59,000 --> 00:16:02,900
+server/api 的目录
+server/api directory
+
+332
+00:16:03,300 --> 00:16:06,100
+使用与页面路由类似的约定
+with a very similar convention to pages for routing
+
+333
+00:16:06,700 --> 00:16:08,733
+Nitro 会将它们部署到无服务器函数
+Nitro will deploy them to a serverless function
+
+334
+00:16:08,733 --> 00:16:11,466
+基于托管服务
+based on the hosting service
+
+335
+00:16:12,466 --> 00:16:15,300
+并且在开发过程中具有端到端类型安全
+and will have end-to-end type safety on development
+
+336
+00:16:16,400 --> 00:16:19,400
+说到类型安全，如果你后来
+so talking about type safety, if later
+
+337
+00:16:19,866 --> 00:16:22,600
+学习 JavaScript 并想在 Nuxt 中使用它
+you learn JavaScript and want to use it in Nuxt
+
+338
+00:16:22,666 --> 00:16:24,500
+没问题，它会正常工作
+no problem, it will just work
+
+339
+00:16:24,566 --> 00:16:28,666
+因为 Nuxt 已经可以解析它了
+and as Nuxt is already understanding it
+
+340
+00:16:30,266 --> 00:16:35,366
+例如更多功能如渐进式 Web 应用（PWA）
+like for more features like progressive web apps
+
+341
+00:16:35,866 --> 00:16:42,066
+搜索引擎优化（SEO），国际化（i18n）等
+search engine optimizations, internationalization etc
+
+342
+00:16:42,900 --> 00:16:47,566
+Nuxt 提供了模块生态系统，可以与它们集成
+Nuxt provides a richmodule ecosystem that can integrate with them
+
+343
+00:16:47,933 --> 00:16:49,400
+只需简单的引入
+with a few clicks
+
+344
+00:16:50,266 --> 00:16:52,466
+最后，如果
+and finally, in case
+
+345
+00:16:52,600 --> 00:16:55,933
+你对更多功能感兴趣，Nuxt 还提供一个 Nuxt devtools工具
+you are interested in more features, Nuxt also provides a Nuxt devtools
+
+346
+00:16:56,133 --> 00:17:00,566
+供你检查内部和分析的工具
+for you to inspect internals or analyze your tools
+
+347
+00:17:01,000 --> 00:17:02,800
+所有这些功能都是可选的
+all these features are opt-in
+
+348
+00:17:02,966 --> 00:17:06,300
+这意味着如果你不需要某个功能
+meaning that if you don't need a certain feature
+
+349
+00:17:06,300 --> 00:17:09,066
+你根本不需要学习它
+you don't need to learn it at all
+
+350
+00:17:09,100 --> 00:17:11,000
+一旦你觉得它有用
+and once you find it useful later
+
+351
+00:17:11,000 --> 00:17:12,966
+你可以轻松地重新获取它
+you can always grab it back easily
+
+352
+00:17:14,933 --> 00:17:16,900
+为了帮助这些优秀的功能被发现
+to help with feature discovery
+
+353
+00:17:16,900 --> 00:17:18,300
+我们制作了 Nuxt devtools
+we made the Nuxt devtools
+
+354
+00:17:18,533 --> 00:17:19,733
+就像我之前提到的
+as we just mentioned
+
+355
+00:17:19,900 --> 00:17:24,233
+例如，Nuxt devtools 提供了一个模块选项卡
+for example, the Nuxt devtools provides a modules tab
+
+356
+00:17:24,600 --> 00:17:26,800
+你可以快速概览
+that you can have a quick overview
+
+357
+00:17:26,933 --> 00:17:29,700
+你安装了多少模块
+of how many modules you have installed
+
+358
+00:17:29,733 --> 00:17:32,566
+并且有链接到它们的文档或源码仓库
+and with a link to their documentation or source code repo
+
+359
+00:17:32,566 --> 00:17:36,733
+还有一个很好的 UI 界面
+and it also offers you a nice UI
+
+360
+00:17:37,466 --> 00:17:40,500
+你可以在社区中寻找所有模块
+for you to search through all the modules across the community
+
+361
+00:17:40,566 --> 00:17:44,300
+你可以让 devtool 自动下载并安装它们
+and you can ask devtool to automatically download and install them
+
+362
+00:17:44,400 --> 00:17:46,700
+只需在 UI 界面中单击一下
+with a single click inside the UI
+
+363
+00:17:47,066 --> 00:17:50,733
+所以 devtool 是为帮助用户发现和理解功能模块
+so devtool is built to help feature discovery and understanding
+
+364
+00:17:50,733 --> 00:17:52,066
+并帮助你
+and to assist you
+
+365
+00:17:52,066 --> 00:17:53,800
+拥有更棒的应用程序
+to have an even more awesome application
+
+366
+00:17:54,066 --> 00:17:57,333
+顺便说一下，我们已经看到
+yeah, just by the way, we already saw
+
+367
+00:17:57,766 --> 00:18:01,766
+这里有很多devtools插件
+the the devtool kit tag made by Gyome so
+
+368
+00:18:02,200 --> 00:18:09,733
+我们希望这些功能能给用户带来更多框架上的选择
+we hope that these features can be brought to more the other framework
+
+369
+00:18:10,266 --> 00:18:14,933
+在文档网站之上 Nuxt 已经
+and on top of documentation sites, Nuxt has
+
+370
+00:18:15,600 --> 00:18:17,533
+在过去的几个月里，我们开始
+in the past few months, we started
+
+371
+00:18:17,700 --> 00:18:20,300
+构建一个交互式教程
+to build an interactive tutorial playground
+
+372
+00:18:21,266 --> 00:18:25,600
+一些人可能已经看过相关的直播
+some of you probably have watched a live streaming on building it
+
+373
+00:18:26,933 --> 00:18:29,900
+顺便一提，感谢当时参与看直播和我一起完成工作的大家
+thank you for working together with me, by the way
+
+374
+00:18:30,366 --> 00:18:33,200
+所以 Nuxt 教程允许初学者有一个更线性的
+so Nuxt Tutorial allows beginners to have a more linear
+
+375
+00:18:33,200 --> 00:18:34,800
+一步一步的学习体验
+step-by-step learning experience
+
+376
+00:18:35,166 --> 00:18:38,300
+这样他们可以更容易地开始使用 Nuxt
+so they can start playing with Nuxt more easily
+
+377
+00:18:38,700 --> 00:18:42,666
+即使不需要设置或安装 Nuxt
+even without the need to set up or install Nuxt
+
+378
+00:18:43,566 --> 00:18:46,100
+这是我们尝试获得的另一个案例
+it's just another case that we are trying to get
+
+379
+00:18:46,100 --> 00:18:49,066
+更顺畅的渐进式引导体验
+the progressive onboarding experience even smoother
+
+380
+00:18:50,166 --> 00:18:53,000
+简而言之，我们的观点是我们应该
+so in short, the point here is that we should
+
+381
+00:18:53,366 --> 00:18:56,000
+随着用户成长，而不是一下子
+grow with users and not putting too much things
+
+382
+00:18:56,466 --> 00:18:57,866
+同时提供太多东西
+up front at once
+
+383
+00:18:58,400 --> 00:19:05,133
+使事情变得更容易起步，并逐步引入新的概念和功能
+making things easier to start with and expose new concepts and powers progressively along the way
+
+384
+00:19:06,700 --> 00:19:09,200
+然后让我们谈谈另一个例子 Vite
+then let's talk about one more example, Vite
+
+385
+00:19:09,600 --> 00:19:12,733
+Vite 目标是下一代前端工具
+Vite titles itself as the next generation frontend tooling
+
+386
+00:19:12,733 --> 00:19:14,700
+我相信没有人会质疑这一点
+I'm pretty sure no one would question that
+
+387
+00:19:16,500 --> 00:19:19,733
+Vite 的理念中提到
+in Vite philosophy's action, the docs mention
+
+388
+00:19:19,766 --> 00:19:25,133
+“Vite会与生态系统紧密合作，以尽量减少发布自身功能”
+Vite works closely with projects in the ecosystem to minimize the regressions on each release
+
+389
+00:19:25,300 --> 00:19:28,800
+让我们看看它是如何做的
+and let's see how it's done in action
+
+390
+00:19:30,366 --> 00:19:33,200
+Vite 现在是第 5 个主要版本
+and Vite is on major version 5 right now
+
+391
+00:19:33,200 --> 00:19:35,966
+在过去的 4 年里，我们基本上
+and during the past 4 years, we basically
+
+392
+00:19:35,966 --> 00:19:37,066
+保持这种节奏，比如
+keep the pace, it's like
+
+393
+00:19:37,066 --> 00:19:38,866
+每年发布一个主要版本
+releasing one major version per year
+
+394
+00:19:38,866 --> 00:19:44,366
+去同步 JavaScript 生态系统和标准的不断演变
+to keep the JavaScript ecosystem and evolving standards
+
+395
+00:19:45,166 --> 00:19:46,200
+有些人可能
+some of you probably
+
+396
+00:19:46,300 --> 00:19:48,300
+经历过那个时期
+have been through that period
+
+397
+00:19:48,533 --> 00:19:49,966
+我们确实进行了重大发布
+we do major releases
+
+398
+00:19:50,166 --> 00:19:53,733
+最后一个 V5 是去年（2023年）十一月发布的
+the last one, V5, was released in November last year (2023)
+
+399
+00:19:53,933 --> 00:19:56,066
+所以并不是很远
+so not too far away
+
+400
+00:19:56,200 --> 00:20:02,233
+众所周知，Vite的版本发布有一个非常顺利的迁移路径
+and it's not a secret that vite major releases have a very smooth migration path
+
+401
+00:20:02,700 --> 00:20:04,733
+我们收到很多评论提到
+and we receive many comments mentioning that
+
+402
+00:20:04,733 --> 00:20:06,733
+他们成功的迁移案例
+their successful migration cases
+
+403
+00:20:06,800 --> 00:20:10,100
+Moonrapo 提到他们升级 Vite
+so Project Moonrapo mentioned they upgraded
+
+404
+00:20:10,300 --> 00:20:12,700
+V2 到 V3 仅仅通过版本升级
+V2 to V3 with only bumping the version 
+
+405
+00:20:12,766 --> 00:20:14,866
+所有功能都正常运转
+and everything keeps working as is
+
+406
+00:20:16,000 --> 00:20:22,633
+Kilian 甚至将 Vite 描述为生态中版本升级最无痛的工具
+so Kilian even described Vite as the most painless version upgrades in a beauty ecosystem ever
+
+407
+00:20:23,533 --> 00:20:25,066
+在 Vite 5发布的时候
+on the release of Vite5
+
+408
+00:20:25,600 --> 00:20:27,000
+有很多类似的评论
+so many comments like this
+
+409
+00:20:27,000 --> 00:20:30,200
+感谢你们，我们很高兴听到这些评论
+and thank you, we are glad to hear those stories
+
+410
+00:20:30,733 --> 00:20:33,800
+所以如果你观察你正在使用的 Vite 插件
+so if you look into Vite plugins of you are using
+
+411
+00:20:33,800 --> 00:20:35,700
+你会发现他们中的许多
+you will find many of
+
+412
+00:20:36,133 --> 00:20:39,133
+遵循类似这张图的模式
+their packaged follow a similar pattern like this
+
+413
+00:20:39,666 --> 00:20:41,733
+vite 出现在
+and vite appears in the
+
+414
+00:20:42,166 --> 00:20:45,333
+预依赖关系中，并且版本范围从 V5
+pre dependency and with the version range from V5
+
+415
+00:20:45,333 --> 00:20:46,733
+一直到 V2
+all the way down to V2
+
+416
+00:20:47,400 --> 00:20:51,300
+这意味着插件可以从 V2 到 V5 完美运行
+this means that plugins keep working from V2 to V5 perfectly
+
+417
+00:20:51,533 --> 00:20:54,900
+无需放弃对之前Vite 版本的支持
+without the need to drop the support for the previous Vite version
+
+418
+00:20:55,333 --> 00:20:58,333
+更不用说这中间相隔了三年
+not to mention that there is 3 years in between
+
+419
+00:20:58,933 --> 00:21:01,566
+对于像 Vite 这样活跃的工具来说
+for such active tools like Vite
+
+420
+00:21:02,166 --> 00:21:04,966
+Vite 投入了大量的心力来实现这一点
+Vite has put a lot of cares to make this possible
+
+421
+00:21:05,066 --> 00:21:06,300
+我们非常关心
+and we care a lot
+
+422
+00:21:06,666 --> 00:21:08,066
+我们做的每一个改变
+on every change we made
+
+423
+00:21:08,066 --> 00:21:11,600
+我们甚至提出了生态系统 CI 的理念
+and we even work out the idea of ecosystem CI that
+
+424
+00:21:12,233 --> 00:21:17,533
+在每个节点上跑主流下游框架的测试
+runs the test of the major downstream frameworks on almost every progress
+
+425
+00:21:17,900 --> 00:21:20,566
+以确保对生态系统的影响最小
+to make sure they have minimal impact to the ecosystem
+
+426
+00:21:21,166 --> 00:21:25,466
+这个实践后来被 Vue、Nuxt 和许多其他框架采纳
+practice has later been adopted to Vue, Nuxt and many other frameworks
+
+427
+00:21:27,266 --> 00:21:31,066
+让我们再来谈谈渐进式破坏性更新
+so let's talk about progressive on breaking changes
+
+428
+00:21:31,966 --> 00:21:34,066
+我猜大概没有人喜欢破坏性更新
+I guess probably no one likes breaking changes
+
+429
+00:21:34,300 --> 00:21:36,933
+但一些情况下破坏性更新在某种程度上也很重要
+but somehow breaking changes are also quite important
+
+430
+00:21:36,966 --> 00:21:39,066
+比如保持代码库的健康
+for the codebases to stay healthy
+
+431
+00:21:39,133 --> 00:21:41,100
+比如长期内更易于维护
+and more maintainable in the long run
+
+432
+00:21:41,366 --> 00:21:42,400
+它帮助我们修复
+it helps us to fix
+
+433
+00:21:42,633 --> 00:21:45,466
+我们之前设计中的不完美之处
+the imperfections in our previous design
+
+434
+00:21:45,666 --> 00:21:47,800
+利用现有更好的生态
+with the better context we have today
+
+435
+00:21:48,766 --> 00:21:50,933
+虽然很难避免引入它们
+while it's hard to avoid introducing them
+
+436
+00:21:50,933 --> 00:21:57,100
+我相信有些方法可以让过渡更顺利和让用户更容易接受
+I believe there make the transition smoother and easier for users to adopt
+
+437
+00:21:57,800 --> 00:22:01,200
+所以结合我们在 Vue 和 Vite 中的经验
+So taking the experience we had in Vue and Vite
+
+438
+00:22:01,566 --> 00:22:04,900
+我认为有两种主要方法可以实现这一点
+I see there are two major ways to achieve that
+
+439
+00:22:05,166 --> 00:22:07,933
+所以我们回到之前的图表
+So we bring back the graph we had before
+
+440
+00:22:08,133 --> 00:22:12,666
+关于从第一个大版本到第二个大版本的跳跃
+Referring the jump between major version 1 to 2, for example
+
+441
+00:22:13,066 --> 00:22:17,466
+一个使破坏性变更渐进式的方法是向前兼容
+And one way to make breaking changes progressively is to do forward compatibility
+
+442
+00:22:17,966 --> 00:22:21,666
+另一个方法是向后兼容，我来解释下
+And the other is backward compatibility. Let me explain
+
+443
+00:22:21,866 --> 00:22:23,133
+前向兼容是
+Forward compatibility is
+
+444
+00:22:23,133 --> 00:22:25,966
+指与未来版本兼容
+About being compatible with versions in the future
+
+445
+00:22:26,866 --> 00:22:28,966
+例如，如果你知道
+Like to say if you know
+
+446
+00:22:29,200 --> 00:22:30,800
+你将会有一个新特性
+You're going to have a new feature
+
+447
+00:22:30,966 --> 00:22:32,700
+会放在下一个破坏性变更中
+And in the next breaking change
+
+448
+00:22:32,700 --> 00:22:35,200
+你可以在当前版本中引入这个特性
+You can bring the feature back in the current version
+
+449
+00:22:35,233 --> 00:22:36,266
+以非破坏性的方式
+In a non-breaking way
+
+450
+00:22:36,766 --> 00:22:38,666
+在实践中，我们经常引入
+In practice, we often introduce
+
+451
+00:22:38,733 --> 00:22:41,966
+实验或特性的标志
+Flags like experimental or features
+
+452
+00:22:42,133 --> 00:22:49,466
+用插件的方式集成，用户就可以在当前版本中开启并使用它们
+For users to explicitly opt in changes  if they want to try new stuff mentioning of the user can still be on the current version
+
+453
+00:22:49,900 --> 00:22:51,400
+而不破坏现有功能
+without breakage
+
+454
+00:22:52,700 --> 00:22:57,100
+在 Vue，vue2 中有 @vue/composition-api 插件的例子
+In Vue, we have the example of Vue Composition API plugin in vue2
+
+455
+00:22:57,166 --> 00:22:59,066
+它提供了在 Vue 2 应用中
+It provides the capability of using
+
+456
+00:22:59,133 --> 00:23:02,200
+使用 Vue 3 组合 API 的能力
+Vue 3's Composition APIs for Vue 2 apps
+
+457
+00:23:02,466 --> 00:23:04,066
+在迁移到 Vue 3 之前
+Before they can migrate to Vue 3
+
+458
+00:23:04,700 --> 00:23:08,833
+然后2年后我们有了vue2.7
+And later we have Vue 2.7  two years after
+
+459
+00:23:09,166 --> 00:23:11,000
+在 Vue 3.0 发布两年后
+Two years after Vue 3.0 has been released
+
+460
+00:23:11,066 --> 00:23:13,933
+为了支持组合 API
+To have the Composition API support
+
+461
+00:23:13,933 --> 00:23:17,600
+更多地与 Vue 3 的行为和功能集对齐
+Aligning more with Vue 3's behavior and feature set
+
+462
+00:23:17,900 --> 00:23:19,366
+在 Nuxt 中，我们引入了
+In Nuxt, we introduced
+
+463
+00:23:19,466 --> 00:23:25,366
+Nuxt Bridge 以连接 Nuxt 2 和 3 之间的变更
+Nuxt Bridge to bridge the changes between Nuxt 2 and 3
+
+464
+00:23:26,666 --> 00:23:28,133
+让我们谈谈向后兼容
+And let's talk about backward compatibility
+
+465
+00:23:28,133 --> 00:23:30,900
+你可能更常听到
+Which you probably heard more often
+
+466
+00:23:31,300 --> 00:23:34,900
+这意味着与之前版本兼容
+This is about compatibility with the previous version
+
+467
+00:23:35,466 --> 00:23:37,700
+一种常见的做法是
+A common practice is that
+
+468
+00:23:37,766 --> 00:23:39,600
+我们会将某个功能标记为已弃用
+We will mark a certain feature as deprecated
+
+469
+00:23:39,600 --> 00:23:41,766
+并在使用时打印警告
+And print warnings upon usage
+
+470
+00:23:41,933 --> 00:23:47,666
+并最终在后续的major版本中移除
+And eventually remove it in the later major version
+
+471
+00:23:47,666 --> 00:23:48,733
+所以这意味着
+So that means that
+
+472
+00:23:48,933 --> 00:23:54,533
+最好进行小版本的发布而不是频繁更新主版本
+It's better to do smaller but also more frequent major releases
+
+473
+00:23:54,666 --> 00:23:56,366
+以使迁移更容易
+To make the migration easier
+
+474
+00:23:57,700 --> 00:24:00,133
+谈到例子
+Taking about examples
+
+475
+00:24:00,233 --> 00:24:10,533
+Vue 3 有兼容性构建，我们有 @vue/compat
+Vue 3 has the compatibility build，we have @vue/compat
+
+476
+00:24:11,066 --> 00:24:13,500
+它建立在 Vue 3 的基础上
+Which is built on top of the foundation of Vue 3
+
+477
+00:24:13,666 --> 00:24:15,800
+额外添加了标志来模拟
+With additional flags to simulate
+
+478
+00:24:16,300 --> 00:24:18,133
+Vue 2 的旧行为
+The legacy Vue 2 behavior
+
+479
+00:24:18,566 --> 00:24:20,933
+你可以在迁移时使用它
+That you can use during the migration
+
+480
+00:24:21,333 --> 00:24:23,966
+在 Nuxt 中，我们有 @nuxt/kit
+In Nuxt, we have @nuxt/kit
+
+481
+00:24:24,133 --> 00:24:32,066
+允许模块作者编写可在 Nuxt 2 和 3 中都可以使用的模块，等等
+That allows module authors to build modules that can work in both Nuxt 2 and Nuxt 3 etc
+
+482
+00:24:33,333 --> 00:24:35,600
+所以从我的，从我的
+so from my under uh from my
+
+483
+00:24:36,000 --> 00:24:37,666
+从我的理解呃
+from my understanding uh
+
+484
+00:24:37,666 --> 00:24:39,666
+我认为渐进式破坏性变更
+I think progressive of breaking change
+
+485
+00:24:39,666 --> 00:24:40,866
+是从根本上
+is fundamentally
+
+486
+00:24:41,166 --> 00:24:42,933
+允许共存
+allow of the coexistence
+
+487
+00:24:43,866 --> 00:24:45,466
+当我们做变更时
+when when we make changes
+
+488
+00:24:45,466 --> 00:24:48,466
+我们应该提供一个“中间阶段”让人们开始
+we should provide the middle stage for people to start
+
+489
+00:24:48,566 --> 00:24:50,700
+进行迁移
+uh to take a rest on migration
+
+490
+00:24:51,000 --> 00:24:54,133
+允许在旧的和新的共存
+um allowing to coexist on both legacy and new
+
+491
+00:24:54,166 --> 00:24:56,000
+这样工作可以渐进地进行
+so the work can be done progressively
+
+492
+00:24:56,000 --> 00:24:58,700
+并减少破坏性改动
+and reduce the chance of uh breakage
+
+493
+00:25:00,866 --> 00:25:02,066
+总结今天的话题
+so to recap today's topic
+
+494
+00:25:02,066 --> 00:25:06,466
+我们讨论了制作工具中的不同方面的渐进式理论
+we talk about progressive on different aspects of building tools
+
+495
+00:25:06,766 --> 00:25:10,533
+首先是关于渐进式引导
+the first is about progressive on boarding
+
+496
+00:25:10,966 --> 00:25:13,166
+我们应该使工具易于
+and we should make a tool easy to
+
+497
+00:25:13,700 --> 00:25:14,733
+学习和理解
+learn and understand
+
+498
+00:25:15,133 --> 00:25:18,900
+让更多的人可以开始使用我们开发的工具
+for more people to get started with the tool we're going to build
+
+499
+00:25:19,166 --> 00:25:21,600
+然后我们谈论了渐进式集成
+and then we talk about progressive on integrations
+
+500
+00:25:21,600 --> 00:25:23,000
+让工具可以涵盖
+for tools to cover
+
+501
+00:25:23,133 --> 00:25:26,100
+不同的场景并易于去使用
+a different scenario and easier to adopt
+
+502
+00:25:26,700 --> 00:25:28,333
+然后我们有渐进式特性
+then we have the progressive on features
+
+503
+00:25:28,333 --> 00:25:29,966
+我们通常希望我们的工具
+it's pretty common that we want
+
+504
+00:25:30,200 --> 00:25:33,066
+功能强大
+our tool to be powerful
+
+505
+00:25:33,133 --> 00:25:36,000
+但也可能让用户感到难以入手
+but also can be overwhelming to users to start with
+
+506
+00:25:36,200 --> 00:25:37,933
+所以采取渐进式方法可以让我们
+so taking the progressive approach would
+
+507
+00:25:37,933 --> 00:25:42,233
+从最小实现开始，随着用户的需求而增长并最终满足用户需求
+allow us to start with minimum and grow with the user as user needs
+
+508
+00:25:42,500 --> 00:25:46,300
+最后我们有渐进式破坏性更新
+and finally we have progressive braking changes
+
+509
+00:25:46,666 --> 00:25:51,966
+提供“中间阶段”以使项目更容易逐步迁移
+to provide the middle stage to make migration easier step by step
+
+510
+00:25:53,133 --> 00:25:57,133
+还有许多其他方面的渐进式理论
+so there are many much more aspect of progressiveness that
+
+511
+00:25:57,366 --> 00:25:59,366
+我们今天没有时间谈论
+we don't have time to talk about this today
+
+512
+00:25:59,500 --> 00:26:04,166
+但我的目标是向你们提出渐进之路的想法
+but my goal here is to bring up the idea of progressive paths to you
+
+513
+00:26:05,000 --> 00:26:10,033
+这可能看起来并不是一种会让人感到兴奋的很酷或特别的事情
+it might not seem to be a very cool unusual things that people would get excited about
+
+514
+00:26:10,266 --> 00:26:14,833
+但我认为这个理论可以在我们日常开发中扮演着重要的角色
+but I think this plays a very important role to our daily software development
+
+515
+00:26:15,166 --> 00:26:17,733
+同时我认为它不仅可以在我们开发工具中
+and we should think about it more often when we're building stuff
+
+516
+00:26:17,866 --> 00:26:20,500
+不仅仅在开源项目中，同时也可以
+not only for open source project but it can also
+
+517
+00:26:21,066 --> 00:26:23,333
+用在我们的产品中
+be used for your products
+
+518
+00:26:24,200 --> 00:26:26,366
+或者在我们日常开发的工具中
+or the way of doing stuff in general
+
+519
+00:26:26,733 --> 00:26:29,566
+用一句话来结束我今天的演讲
+so to finish my talk in one sentence I'd say
+
+520
+00:26:30,200 --> 00:26:36,566
+提供渐进之路是为了让用户能够通过分而治之的方式
+to provide the progressive path is to enable users capability of divide and conquers
+
+521
+00:26:36,766 --> 00:26:38,266
+去实现他们的目标
+towards the goal they have
+
+522
+00:26:38,766 --> 00:26:40,966
+我希望你们喜欢并觉得有用
+and I hope you enjoy and find it useful
+
+523
+00:26:41,133 --> 00:26:42,666
+这就是我今天演讲的全部内容
+and that's all for my talk
+
+524
+00:26:42,733 --> 00:26:44,333
+谢谢大家，祝 happy hacking
+thank you and happy hacking
+

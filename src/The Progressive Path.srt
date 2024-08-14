@@ -20,12 +20,12 @@ very nervous so hope you don't mind so
 
 5
 00:00:36,300 --> 00:00:39,000
-是的，我希望你们喜欢这次会议
+是的，我希望你们像我一样
 yeah and I hope you enjoyed the conference so far
 
 6
 00:00:39,000 --> 00:00:40,200
-像我一样
+享受这场大会
 as much as I do
 
 7
@@ -70,12 +70,12 @@ and hi
 
 15
 00:01:00,966 --> 00:01:03,333
-我女朋友安妮斯为我画了这个可爱的头像
-my girlfriend Ennes draw me this cute avatar
+我女朋友 Inès 为我画了这个可爱的造型
+my girlfriend Inès draw me this cute avatar
 
 16
 00:01:03,333 --> 00:01:05,666
-还有我们稍后会看到的一些卡通画
+以及我们稍后会看到的一些插画
 and also the electrician we're going to see later
 
 17
@@ -85,7 +85,7 @@ so thanks to her
 
 18
 00:01:07,866 --> 00:01:10,100
-是的，我叫 Anthony Fu
+然后，我叫 Anthony Fu
 and yeah so my name is Anthony Fu
 
 19
@@ -100,8 +100,8 @@ View and Vite I'm also the creator of VueUse, Slidev
 
 21
 00:01:16,300 --> 00:01:19,000
-Vitest、Unocss 等一些
-Vitest, UnoCss and a few
+Vitest、UnoCSS 等一些
+Vitest, UnoCSS and a few
 
 22
 00:01:19,933 --> 00:01:21,466
@@ -110,8 +110,8 @@ other open source projects
 
 23
 00:01:21,766 --> 00:01:25,033
-目前我在 Nuxt Lab 的框架团队工作
-so I'm currently working at Nuxt Lab on the framework team
+目前我在 NuxtLabs 的框架团队工作
+so I'm currently working at NuxtLabs on the framework team
 
 24
 00:01:25,466 --> 00:01:29,500
@@ -276,7 +276,7 @@ and in case you are interested
 56
 00:02:45,800 --> 00:02:50,000
 你可以在我的网站antfu.me上找到录音
-you can find the recordings on my website antfu.me afterwrad
+you can find the recordings on my website antfu.me afterward
 
 57
 00:02:50,966 --> 00:02:54,366
@@ -310,7 +310,7 @@ and have you ever thought about the question that
 
 63
 00:03:08,500 --> 00:03:09,600
-什么定义了工具
+是什么定义了工具？
 what defines a tool
 
 64
@@ -2614,6 +2614,6 @@ and that's all for my talk
 
 524
 00:26:42,733 --> 00:26:44,333
-谢谢大家，祝 happy hacking
+谢谢大家，祝大家 happy hacking
 thank you and happy hacking
 

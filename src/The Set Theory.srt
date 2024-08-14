@@ -5,8 +5,8 @@ hello everyone
 
 2
 00:00:12,933 --> 00:00:17,100
-很高兴在 viteconf 再次见到大家
-it feels so good to be back here and see you again at the viteconf
+很高兴在 ViteConf 再次见到大家
+it feels so good to be back here and see you again at the ViteConf
 
 3
 00:00:17,866 --> 00:00:20,733
@@ -15,12 +15,12 @@ and today my topic is The Set Theory
 
 4
 00:00:21,000 --> 00:00:23,366
-我知道这会有点难以理解，但别担心
+我知道这会稍微有些不明所以，但别担心
 I know it's a bit random but don't worry
 
 5
 00:00:23,366 --> 00:00:25,133
-稍后我会解释
+稍后我会慢慢解释
 I'll try to explain that later
 
 6
@@ -45,13 +45,13 @@ I'm also creating a few open source project
 
 10
 00:00:36,500 --> 00:00:41,433
-我是Vitest, Slidev, UnoCss, VueUse, 和 Elk的作者
-and I'm a creator of Vitest, Slidev, UnoCss, VueUse, and Elk
+我是 Vitest, Slidev, UnoCSS, VueUse, 和 Elk 的作者
+and I'm a creator of Vitest, Slidev, UnoCSS, VueUse, and Elk
 
 11
 00:00:41,966 --> 00:00:44,966
-我目前在Nuxt Lab的框架团队工作
-I'm currently working at Nuxt lab on the framework team
+我目前在 NuxtLabs 的框架团队工作
+I'm currently working at NuxtLabs on the framework team
 
 12
 00:00:45,666 --> 00:00:47,300
@@ -320,13 +320,13 @@ my first open source project back in 2019
 
 65
 00:03:31,200 --> 00:03:34,366
-这个项目叫做vscode-vue-i18n-ally
-the repo name is called vscode-vue-i18n-ally
+这个项目叫做 VS Code-vue-i18n-ally
+the repo name is called VS Code-vue-i18n-ally
 
 66
 00:03:34,766 --> 00:03:39,900
-它是一个vscode插件，帮助 vue 开发者处理国际化(i18n)
-it's a vscode extension for helping vue developers to working on i18n
+它是一个 VS Code 插件，帮助 Vue 开发者处理国际化 (i18n)
+it's a VS Code extension for helping vue developers to working on i18n
 
 67
 00:03:40,066 --> 00:03:42,000
@@ -370,7 +370,7 @@ I'm super happy when I got uh
 
 75
 00:04:06,200 --> 00:04:08,766
-第一个100和200个GitHub星标
+第一个100和200个GitHub stars
 the first 100 and 200 stars on Github
 
 76
@@ -435,18 +435,18 @@ let's break it down to see part by part
 
 88
 00:04:47,166 --> 00:04:50,266
-首先，我们知道这是一个 vscode 插件
-so first we know that it's a vscode extension
+首先，我们知道这是一个 VS Code 插件
+so first we know that it's a VS Code extension
 
 89
 00:04:50,500 --> 00:04:54,733
-这意味着只有 vscode 用户会用这个插件
-so basically means that only vscode user would use this extension
+这意味着只有 VS Code 用户会用这个插件
+so basically means that only VS Code user would use this extension
 
 90
 00:04:55,266 --> 00:04:58,366
-我们可以画一个圈，代表 vscode 用户
-we could draw a circle indicating the vscode user here
+我们可以画一个圈，代表 VS Code 用户
+we could draw a circle indicating the VS Code user here
 
 91
 00:04:59,466 --> 00:05:00,766
@@ -550,12 +550,12 @@ we could soon realize that
 
 111
 00:06:01,166 --> 00:06:03,700
-VS Code和Vue的交集
+VS Code 和 Vue 的交集
 the intersection between VS Code and Vue
 
 112
 00:06:03,700 --> 00:06:05,000
-实际上是Volar
+实际上是 Volar
 is actually Volar
 
 113
@@ -565,7 +565,7 @@ or Vetur at that time
 
 114
 00:06:07,800 --> 00:06:10,000
-就是VS Code对Vue的IDE支持
+就是 VS Code 对 Vue 的 IDE 支持
 the VS Code IDE support for Vue
 
 115
@@ -575,12 +575,12 @@ as the result, we know that
 
 116
 00:06:13,766 --> 00:06:16,600
-Vetur和Volar有很大的用户群
+Vetur 和 Volar 有很大的用户群
 Vetur and Volar have a huge user base
 
 117
 00:06:16,666 --> 00:06:18,900
-因为Vue和VS Code都有
+因为 Vue 和 VS Code 都有
 because both Vue and VS Code have
 
 118
@@ -600,12 +600,12 @@ similarly
 
 121
 00:06:26,300 --> 00:06:29,766
-我们看到Vue和i18n的交集
+我们看到 Vue 和 i18n 的交集
 we see that the intersection between Vue and i18n
 
 122
 00:06:30,133 --> 00:06:31,966
-是像Vue-i18n这样的项目
+是像 vue-i18n 这样的项目
 are the projects like Vue-i18n
 
 123
@@ -615,7 +615,7 @@ which are also super popular
 
 124
 00:06:35,733 --> 00:06:40,100
-所以当涉及到VS Code和i18n的交集
+所以当涉及到 VS Code 和 i18n 的交集
 so when it comes to the intersection between VS Code and i18n
 
 125
@@ -675,22 +675,22 @@ designed a plugin interface to make the core feature universal
 
 136
 00:07:17,066 --> 00:07:21,900
-在1.0版本我将项目名称从Vue-i18n-Ally改为i18n-Ally
+在1.0版本我将项目名称从 vue-i18n-ally 改为 i18n-ally
 at 1.0 I renamed the projects from Vue-i18n-Ally to i18n-Ally
 
 137
 00:07:22,500 --> 00:07:24,366
-从一个仅限Vue的扩展
+从一个仅限 Vue 的扩展
 from a Vue-only extension
 
 138
 00:07:24,400 --> 00:07:30,200
-变为支持多个框架的VS Code通用i18n助手
+变为支持多个框架的 VS Code 通用 i18n 助手
 to a universal i18n helper for VS Code that supports a wide range of frameworks
 
 139
 00:07:30,333 --> 00:07:33,200
-现在支持React和Angular
+现在支持 React 和 Angular
 now say React and Angular
 
 140
@@ -730,7 +730,7 @@ the stars almost doubled in a month at that time
 
 147
 00:08:01,766 --> 00:08:05,333
-所以，让我们谈谈我们的老朋友Vite
+所以，让我们谈谈我们的老朋友 Vite
 so, um, let's talk a bit about our old friend Vite
 
 148
